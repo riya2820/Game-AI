@@ -3,7 +3,7 @@
 
 using namespace std;
 
-joshirs::MyOthelloAI::MyOthelloAI()
+::MyOthelloAI::MyOthelloAI()
 {
 } 
 
@@ -24,7 +24,7 @@ vector<pair<int,int>> joshirs::MyOthelloAI::possible_moves(const OthelloGameStat
 }
 
 
-int joshirs::MyOthelloAI::eval(const OthelloGameState& state)
+int ::MyOthelloAI::eval(const OthelloGameState& state)
 {
     int score = 0;
     const OthelloBoard& board = state.board();
@@ -45,7 +45,7 @@ int joshirs::MyOthelloAI::eval(const OthelloGameState& state)
 }
 
 
-int joshirs::MyOthelloAI::search(OthelloGameState& state, int depth)
+int ::MyOthelloAI::search(OthelloGameState& state, int depth)
 {
     if (depth == 0) { //i.e game over at root node
     return eval(state); 
