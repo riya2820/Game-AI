@@ -6,7 +6,7 @@
 
 using namespace std;
 
-namespace joshirs
+namespace <...>
 {
 
   class MyOthelloAI : public OthelloAI  // OthelloAI base class provided. DSAOthello creates AI algorithm to play game. 
